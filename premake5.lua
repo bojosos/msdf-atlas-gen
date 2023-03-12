@@ -20,7 +20,8 @@ project "msdf-atlas-gen"
 	{
 		"msdf-atlas-gen",
 		"msdfgen",
-		"msdfgen/include"
+		"msdfgen/include",
+		"artery-font-format"
 	}
 
 	defines
@@ -43,8 +44,3 @@ project "msdf-atlas-gen"
 	filter "configurations:Release"
 		runtime "Release"
 		optimize "on"
-
-	filter "configurations:Dist"
-		runtime "Release"
-		optimize "on"
-        symbols "off"

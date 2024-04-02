@@ -60,7 +60,7 @@ public:
     /// Simplifies to GlyphBox
     operator GlyphBox() const;
 
-private:
+// private:
     int index;
     unicode_t codepoint;
     double geometryScale;

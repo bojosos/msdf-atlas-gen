@@ -69,7 +69,7 @@ public:
     /// Returns the name associated with the font or null if not set
     const char * getName() const;
 
-private:
+// private:
     double geometryScale;
     msdfgen::FontMetrics metrics;
     GlyphIdentifierType preferredIdentifierType;
@@ -78,7 +78,7 @@ private:
     std::map<int, size_t> glyphsByIndex;
     std::map<unicode_t, size_t> glyphsByCodepoint;
     std::map<std::pair<int, int>, double> kerning;
-    std::vector<GlyphGeometry> ownGlyphs;
+    std::vector<GlyphGeometry> ownGlyphs; // Use this to import the glyphs
     std::string name;
 
 };

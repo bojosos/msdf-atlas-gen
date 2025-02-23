@@ -5,7 +5,7 @@
 #include <set>
 #include "types.h"
 
-#define MSDF_ATLAS_PUBLIC __declspec(dllexport)
+#define MSDF_ATLAS_PUBLIC // __declspec(dllexport)
 
 namespace msdf_atlas {
 
